@@ -16,8 +16,7 @@ if done_compile{
 	done_compile = false
 	
 	if compile_type = "lime3ds"
-		execute_shell(working_directory + "\\lime3ds\\lime3ds.exe", path + "\\mydr.3dsx\"");
-		
+		execute_shell(working_directory + "\\lime3ds\\lime3ds.exe", "\"" + path + "\\mydr.3dsx\"");
 	if compile_type = "3dsx"
 		execute_shell("explorer.exe", path);
 }

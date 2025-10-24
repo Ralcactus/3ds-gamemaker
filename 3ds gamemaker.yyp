@@ -29,8 +29,6 @@
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"example.txt","CopyToMask":-1,"filePath":"datafiles","name":"example.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"execute_shell_simple_ext.html","CopyToMask":0,"filePath":"datafiles","name":"execute_shell_simple_ext.html","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"avcodec-60.dll","CopyToMask":-1,"filePath":"datafiles/lime3ds","name":"avcodec-60.dll","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"avformat-60.dll","CopyToMask":-1,"filePath":"datafiles/lime3ds","name":"avformat-60.dll","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"avutil-58.dll","CopyToMask":-1,"filePath":"datafiles/lime3ds","name":"avutil-58.dll","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
