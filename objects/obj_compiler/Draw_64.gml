@@ -1,3 +1,4 @@
+//oh me oh my! test stuff!
 draw_set_font(fnt_open_sans)
 draw_set_color(c_aqua)
 draw_text(340,60,"HIIIIIIII")
