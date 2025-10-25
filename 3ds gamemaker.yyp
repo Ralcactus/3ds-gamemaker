@@ -127,7 +127,7 @@
     {"id":{"name":"obj_button_make_open","path":"objects/obj_button_make_open/obj_button_make_open.yy",},},
     {"id":{"name":"obj_compiler","path":"objects/obj_compiler/obj_compiler.yy",},},
     {"id":{"name":"obj_projectmenu","path":"objects/obj_projectmenu/obj_projectmenu.yy",},},
-    {"id":{"name":"obj_text_editor","path":"objects/obj_text_editor/obj_text_editor.yy",},},
+    {"id":{"name":"obj_text_editorOLD","path":"objects/obj_text_editorOLD/obj_text_editorOLD.yy",},},
     {"id":{"name":"editor","path":"rooms/editor/editor.yy",},},
     {"id":{"name":"project_select","path":"rooms/project_select/project_select.yy",},},
     {"id":{"name":"TEST","path":"rooms/TEST/TEST.yy",},},
