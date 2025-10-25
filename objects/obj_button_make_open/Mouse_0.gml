@@ -12,6 +12,6 @@ if (position_meeting(mouse_x, mouse_y, self)){
 	if !file_exists(global.project_path + "\compile.bat") //check if this a valid project file, more checks later on
 		show_message("Error! Folder Does not contain a compile.bat!") 
 	else
-		room_goto(compile_test) //guess
+		room_goto(editor) //guess
 
 }

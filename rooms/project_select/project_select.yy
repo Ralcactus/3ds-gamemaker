@@ -1,14 +1,14 @@
 {
   "$GMRoom":"v1",
-  "%Name":"Room1",
-  "creationCodeFile":"rooms/Room1/RoomCreationCode.gml",
+  "%Name":"project_select",
+  "creationCodeFile":"rooms/project_select/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_B0D169B","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_5FB255DD","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_FA3C2F3","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_B0D169B","path":"rooms/project_select/project_select.yy",},
+    {"name":"inst_5FB255DD","path":"rooms/project_select/project_select.yy",},
+    {"name":"inst_FA3C2F3","path":"rooms/project_select/project_select.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -36,7 +36,7 @@
         {"name":"g_GradientMode","type":0,"value":"0",},
       ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"Room1",
+  "name":"project_select",
   "parent":{
     "name":"Rooms",
     "path":"folders/Rooms.yy",
