@@ -217,6 +217,12 @@ while (true) {
 if (action) {
     keyboard_string = "";
 
+    // IMPORTANT: if we're about to modify text, normalize the sentinel cursor
+    if (multiline && action != 3 && cursor_position < 0) {
+        cursor_position = -cursor_position + 1;
+    }
+
+
     // Deletes characters in text selection (if enabled). Adds new characters. Limits text if too long.
     if (action != 3) {
         if (selection_enabled && selection_start != 0) {

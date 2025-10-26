@@ -22,7 +22,6 @@ if (fr != -1) {
 
 with (obj_input_text) {
     text_change_from_outside = other.file_content;
-    other.alarm[0] = 20;
 }
 storedtext = obj_input_text.text;
 image_alpha = 0;
