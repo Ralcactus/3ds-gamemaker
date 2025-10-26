@@ -10,6 +10,7 @@ input_text_create_multiline_ext(
 );
 
 file_path = global.project_path + "/source/main.cpp";
+//file_path = "NULL";
 
 var fr = file_text_open_read(file_path);
 file_content = "";

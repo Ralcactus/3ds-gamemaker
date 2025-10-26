@@ -68,3 +68,19 @@ if scrollerer != 0 && keyboard_check(vk_control){
     camera_set_view_pos(view_camera[0], cx, cy)
 }
 
+dbl_timer += 1
+var row = floor((device_mouse_y_to_gui(0) - 365) / 40)
+
+if (mouse_check_button_pressed(mb_left)) {
+    if (device_mouse_x_to_gui(0) > 2482-200 && device_mouse_x_to_gui(0) < 2482+400 && row >= 0 && row < array_length(file_list)) {
+
+        if (dbl_index == row && dbl_timer < 18){
+            show_debug_message("HEY YOU DOUBLE CLICKED " + string(file_list[row]) + " THATS SO COOL IMA MAKE A CODE WINDOW NOW")
+			
+		}
+
+        dbl_index = row
+        dbl_timer = 0
+    }
+}
+

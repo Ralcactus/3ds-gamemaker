@@ -30,3 +30,9 @@ is_dragging = false;
 base_w = camera_get_view_width(view_camera[0])
 base_h = camera_get_view_height(view_camera[0])
 zoom   = 1
+
+last_click_time = 0
+last_click_index = -1
+
+dbl_timer = 0
+dbl_index = -1
