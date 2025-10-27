@@ -1,4 +1,4 @@
-input_text_create_multiline_ext(
+text_obj = input_text_create_multiline_ext(
     x, //x
     y, //y
     1000,    // textbox width
@@ -9,20 +9,4 @@ input_text_create_multiline_ext(
     fa_left, fa_top, true, 0 //more stuff
 );
 
-file_path = global.project_path + "/source/main.cpp";
-//file_path = "NULL";
-
-var fr = file_text_open_read(file_path);
-file_content = "";
-if (fr != -1) {
-    while (!file_text_eof(fr)) {
-        file_content += file_text_readln(fr);
-    }
-    file_text_close(fr);
-}
-
-with (obj_input_text) {
-    text_change_from_outside = other.file_content;
-}
-storedtext = obj_input_text.text;
 image_alpha = 0;

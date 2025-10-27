@@ -7,9 +7,6 @@ draw_set_font(fnt_open_sans)
 draw_set_color(c_ltgray)
 draw_text(340,60,"PRESS F5 TO TEST ON LIME 3DS, PRESS F6 TO COMPILE A 3DSX")
 
-
-
-
 draw_sprite(spr_minifolder,scriptfolder_open,2380+ass*3-3-shit,310+15)
 
 draw_sprite(spr_minifolder_arrow,0,2380-ass*3-shit,310)

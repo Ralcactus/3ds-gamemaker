@@ -8,7 +8,6 @@
 // text_draw is the string that's drawn to screen in the draw event. We also update the cursor's screen position, and offsets and matrices according to "fit style" to fit the text to its width and height.
 // Note that we use chr(10) a.k.a. line feed for new line characters. (We're not using the chr(13) + chr(10) standard as GM's draw_text sees this as two new lines (unless in HTML5).) The if statement in the end is for saving
 // undo/redo states and updating the cursor timer. If you have any questions, send me (Dragon47) a message on the Game Maker Community website or a mail to asbjorn.lystrup@gmail.com.
-
 if (enabled) {
     // Holding down certain keys can eventually simulate a series of presses. (E.g. holding down arrow keys when navigating text.)
     key_pressed = 0;

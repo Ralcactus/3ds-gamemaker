@@ -73,10 +73,32 @@ var row = floor((device_mouse_y_to_gui(0) - 365) / 40)
 
 if (mouse_check_button_pressed(mb_left)) {
     if (device_mouse_x_to_gui(0) > 2482-200 && device_mouse_x_to_gui(0) < 2482+400 && row >= 0 && row < array_length(file_list)) {
-
         if (dbl_index == row && dbl_timer < 18){
-            show_debug_message("HEY YOU DOUBLE CLICKED " + string(file_list[row]) + " THATS SO COOL IMA MAKE A CODE WINDOW NOW")
-			
+            show_debug_message("HEY YOU DOUBLE CLICKED " + file_list[row] + " THATS SO COOL IMA MAKE A CODE WINDOW NOW")
+			with instance_create(room_width/2,room_height/2,obj_code_input){
+				file_path = global.project_path + "source\\" + other.file_list[row];
+				//file_path = "NULL";
+
+				var fr = file_text_open_read(file_path);
+				file_content = "";
+				if (fr != -1) {
+				    while (!file_text_eof(fr)) {
+				        file_content += file_text_readln(fr);
+				    }
+				    file_text_close(fr);
+				}
+
+				with (text_obj) {
+				    input_text_set_text(other.text_obj,other.file_content)
+				}
+				storedtext = text_obj.text;	
+				
+				if place_meeting(x,y,obj_code_input){
+					text_obj.y+=1200
+					y+=1200	
+				}
+				
+			}
 		}
 
         dbl_index = row

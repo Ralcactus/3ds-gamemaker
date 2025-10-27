@@ -47,7 +47,6 @@ if (update_surfaces) {
     surface_reset_target();
 }
 
-matrix_set(matrix_world, matrix_global);
 if (selection_enabled && selection_start != 0) {
     if (shaders) {
         shader_set(sh_input_text_selection);
@@ -55,10 +54,10 @@ if (selection_enabled && selection_start != 0) {
         shader_set_uniform_f(uniform_selection_color_text, selection_red_text, selection_green_text, selection_blue_text, selection_alpha_text);
         shader_set_uniform_f(uniform_selection_color_background, selection_red_background, selection_green_background, selection_blue_background, selection_alpha_background);
         shader_set_uniform_f(uniform_alpha, alpha);
-        draw_surface(sf_selection, -origin_x, -origin_y)
-    } else draw_surface_ext(sf_selection, -origin_x, -origin_y, 1, 1, 0, selection_color_background, selection_alpha_background);
+		draw_surface(sf_selection, x - origin_x, y - origin_y)
+    } else draw_surface_ext(sf_selection, x - origin_x, y - origin_y, 1, 1, 0, selection_color_background, selection_alpha_background);
 }
-draw_surface(sf_main, -origin_x, -origin_y);
+draw_surface(sf_main, x - origin_x, y - origin_y);
 if (shaders && selection_enabled && selection_start != 0) shader_reset();
 
 // Draws the cursor in the given style.
